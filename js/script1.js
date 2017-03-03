@@ -3,7 +3,7 @@ $(document).ready(function() {
 
 var scores, roundScore, activePlayer, gamePlaying;
 
-
+initialize();
 
 var lastDice;
 
@@ -102,6 +102,9 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
                   document.getElementById('dice-1').style.display = 'none';
                   document.getElementById('dice-2').style.display = 'none';
               }
+
+
+
 
 
 
