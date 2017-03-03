@@ -7,4 +7,9 @@ init();
 
 var lastDice;
 
+/*Backend logic*/
+document.querySelector('.btn-roll').addEventListener('click', function() {
+    if(gamePlaying) {
+
+
 });
