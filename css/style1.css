@@ -16,6 +16,15 @@ body {
     position: relative;
     height: 100vh;
     color: #555;
+    overflow: hidden;
+}
+
+#header {
+    font-weight: 600;
+    font-family: 'Baloo', cursive;
+    text-align: center;
+    color: rgb(250, 1, 1);
+
 }
 
 .wrapper {
