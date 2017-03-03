@@ -69,6 +69,19 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
                           winningScore = 100;
                       }
 
+                      // Check if player won the game
+                      if (scores[activePlayer] >= winningScore) {
+                          document.querySelector('#name-' + activePlayer).textContent = 'Winner!';
+                          document.getElementById('dice-1').style.display = 'none';
+                          document.getElementById('dice-2').style.display = 'none';
+                          document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
+                          document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active');
+                          gamePlaying = false;
+                      } else {
+                          //Next player
+                          nextPlayer();
+                      }
+                  }
               });
 
 
