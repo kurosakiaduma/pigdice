@@ -19,8 +19,16 @@ body {
 }
 
 .wrapper {
-    color: #fffefe;
+    background-color: rgb(4, 225, 255);
+    color: rgb(0, 0, 0);
     font-family: 'Baloo', cursive;
+    width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
 }
 
 .final-score {
