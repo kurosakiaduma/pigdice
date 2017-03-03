@@ -55,7 +55,21 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
                       // Add CURRENT score to GLOBAL score
                       scores[activePlayer] += roundScore;
 
-                          });
+                      // Update the UI
+                      document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
+
+                      var input = document.querySelector('.final-score').value;
+                      var winningScore;
+
+                      // Undefined, 0, null or "" are COERCED to false
+                      // Anything else is COERCED to true
+                      if(input) {
+                          winningScore = input;
+                      } else {
+                          winningScore = 100;
+                      }
+
+              });
 
 
 
