@@ -27,6 +27,10 @@ body {
 
 }
 
+#fs{
+    display: none;
+}
+
 .wrapper {
     background-color: rgb(4, 225, 255);
     color: rgb(0, 0, 0);
