@@ -1,8 +1,20 @@
-body {
-    background-color:#000000;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.wrapper{
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    background-color: #000000;
+}
+
+.wrapper {
     color: #fffefe;
     font-family: 'Baloo', cursive;
 }
@@ -21,7 +33,14 @@ body {
     text-transform: uppercase;
 }
 
-.final-score:focus { outline: none; }
+.final-score:focus {
+    outline: none;
+}
 
-#dice-1 { top: 120px; }
-#dice-2 { top: 250px; }
+#dice-1 {
+    top: 120px;
+}
+
+#dice-2 {
+    top: 250px;
+}
