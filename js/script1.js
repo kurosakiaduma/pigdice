@@ -5,6 +5,6 @@ var scores, roundScore, activePlayer, gamePlaying;
 
 init();
 
-
+var lastDice;
 
 });
